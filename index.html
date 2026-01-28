@@ -3,14 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Méndez & Asociados – Estudio Jurídico</title>
 
-  <!-- Google Fonts -->
+  <!-- SEO -->
+  <title>Méndez & Asociados | Estudio Jurídico</title>
+  <meta name="description" content="Estudio jurídico especializado en derecho civil, laboral, familiar y asesoría empresarial. Atención profesional y personalizada." />
+  <meta name="theme-color" content="#0B2545">
+
+  <!-- Google Fonts (optimizado) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
@@ -18,7 +22,7 @@
 <header class="header">
   <div class="container nav">
     <div class="logo">Méndez & Asociados</div>
-    <nav>
+    <nav aria-label="Navegación principal">
       <a href="#areas">Áreas</a>
       <a href="#estudio">El estudio</a>
       <a href="#contacto" class="btn btn-outline">Consulta</a>
@@ -29,7 +33,7 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-overlay"></div>
-  <div class="container hero-content">
+  <div class="container hero-content reveal">
     <h1>Soluciones legales claras y efectivas</h1>
     <p>
       Asesoramiento jurídico profesional para proteger tus derechos
@@ -40,27 +44,27 @@
 </section>
 
 <!-- ÁREAS -->
-<section id="areas" class="section bg-light">
+<section id="areas" class="section bg-light reveal">
   <div class="container">
     <h2 class="section-title">Áreas de práctica</h2>
 
     <div class="grid grid-4">
-      <div class="card">
+      <div class="card reveal">
         <h3>Derecho civil</h3>
         <p>Contratos, daños y conflictos patrimoniales.</p>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h3>Derecho laboral</h3>
         <p>Despidos, indemnizaciones y asesoramiento legal.</p>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h3>Derecho familiar</h3>
         <p>Divorcios, alimentos y régimen de visitas.</p>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h3>Asesoría empresarial</h3>
         <p>Soporte legal integral para empresas y pymes.</p>
       </div>
@@ -69,9 +73,9 @@
 </section>
 
 <!-- EL ESTUDIO -->
-<section id="estudio" class="section">
+<section id="estudio" class="section reveal">
   <div class="container grid grid-2">
-    <div>
+    <div class="reveal">
       <h2>El estudio</h2>
       <p>
         Somos un estudio con amplia experiencia, enfocado en ofrecer
@@ -83,32 +87,33 @@
       </p>
     </div>
 
-    <div class="image-box">
+    <div class="image-box reveal">
       <img
         src="https://images.unsplash.com/photo-1521791136064-7986c2920216"
-        alt="Estudio jurídico"
+        alt="Equipo profesional del estudio jurídico"
+        loading="lazy"
       />
     </div>
   </div>
 </section>
 
 <!-- POR QUÉ ELEGIRNOS -->
-<section class="section bg-light">
+<section class="section bg-light reveal">
   <div class="container">
     <h2 class="section-title">¿Por qué elegirnos?</h2>
 
     <div class="grid grid-3">
-      <div class="card">
+      <div class="card reveal">
         <h3>Experiencia comprobada</h3>
         <p>Años de práctica profesional respaldan nuestro trabajo.</p>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h3>Trato personalizado</h3>
         <p>Cada caso es único y recibe atención directa.</p>
       </div>
 
-      <div class="card">
+      <div class="card reveal">
         <h3>Compromiso real</h3>
         <p>Defendemos tus intereses con seriedad y responsabilidad.</p>
       </div>
@@ -117,7 +122,7 @@
 </section>
 
 <!-- CTA FINAL -->
-<section class="cta-final">
+<section class="cta-final reveal">
   <div class="container">
     <h2>Tu caso merece atención profesional</h2>
     <a href="#contacto" class="btn btn-primary">Contactanos hoy</a>
@@ -125,14 +130,14 @@
 </section>
 
 <!-- CONTACTO -->
-<section id="contacto" class="section">
+<section id="contacto" class="section reveal">
   <div class="container grid grid-2">
     <div>
       <h2>Consulta legal</h2>
       <p>Dejanos tu consulta y te responderemos a la brevedad.</p>
     </div>
 
-    <form class="form">
+    <form class="form" aria-label="Formulario de contacto">
       <input type="text" placeholder="Nombre" required />
       <input type="email" placeholder="Email" required />
       <textarea placeholder="Mensaje"></textarea>
@@ -148,7 +153,7 @@
   href="https://wa.me/5493624217727"
   class="whatsapp"
   target="_blank"
-  aria-label="WhatsApp"
+  aria-label="Contactar por WhatsApp"
 >
   💬
 </a>
@@ -157,7 +162,6 @@
 <footer class="footer">
   <div class="container footer-content">
 
-    <!-- CTA FOOTER -->
     <div class="footer-cta">
       <strong>¿Querés una web así para tu negocio?</strong>
       <span>Diseño web y marketing digital a medida.</span>
@@ -176,13 +180,12 @@
       </div>
     </div>
 
-    <!-- REDES -->
     <div class="footer-social">
-      <a href="https://instagram.com/eduardosoto.marketing" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" />
+      <a href="https://instagram.com/eduardosoto.marketing" target="_blank" aria-label="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" loading="lazy" />
       </a>
-      <a href="https://www.facebook.com/EduardoSotoMarketingDigital" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" />
+      <a href="https://www.facebook.com/EduardoSotoMarketingDigital" target="_blank" aria-label="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" loading="lazy" />
       </a>
     </div>
 
@@ -193,6 +196,6 @@
   </div>
 </footer>
 
-<script src="main.js"></script>
+<script src="js/main.js" defer></script>
 </body>
 </html>
