@@ -39,3 +39,16 @@ if ("IntersectionObserver" in window) {
 } else {
   reveals.forEach(el => el.classList.add("active"));
 }
+
+// =====================
+// HEADER SCROLL EFECTO
+// =====================
+const header = document.querySelector(".header");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 50) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
