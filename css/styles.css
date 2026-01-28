@@ -59,7 +59,9 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 16px 0;
+  position: relative; /* 👈 ESTA ES LA CLAVE */
 }
+
 
 .logo {
   font-weight: 700;
@@ -71,6 +73,56 @@ img {
   color: var(--blue-dark);
   font-weight: 500;
 }
+
+/* =========================
+   MENU HAMBURGUESA
+========================= */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: var(--blue-dark);
+  border-radius: 2px;
+}
+
+/* MOBILE */
+@media (max-width: 767px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+  position: absolute;
+  top: 70px;
+  right: 5%;
+  background: var(--white);
+  box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  border-radius: 12px;
+  padding: 20px;
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  z-index: 999; /* 👈 ACÁ */
+}
+
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav a {
+    margin-left: 0;
+  }
+}
+
 
 /* =========================
    HERO
@@ -271,6 +323,20 @@ img {
   margin: 8px;
 }
 
+
+/* =========================
+   HOVER ANIMADO ICONOS
+========================= */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+.footer-social a:hover {
+  animation: bounce 0.4s ease;
+}
+
+
 /* =========================
    DESKTOP (>=768px)
 ========================= */
@@ -341,6 +407,25 @@ p {
     color: #f1f1f1;
   }
 }
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+/* ICONOS REDES SOCIALES */
+.footer-social a {
+  display: inline-block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: translateY(-5px) scale(1.1); /* sube y crece un poquito */
+  filter: brightness(1.2); /* se ve más brillante */
+}
+
 
 /* =========================
    ANIMACIONES SUAVES
